@@ -1,0 +1,619 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.leader{
+    width: 100%;
+    height: 37px;
+    background-color: rgb(1, 1, 0);
+    padding: 0px 150px ; 
+    display: flex;
+}
+.leader .freeshop{
+    width: 20%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    
+}
+.leader .freeshop p{
+    color: #d1c7c7da;  
+}
+.menu1{
+    width: 30%;
+    height: 100%;
+    margin-left: 500px;
+    display: flex;
+    justify-content: right;
+    align-items: center;   
+}
+.menu1 ul{
+    display: flex;
+    margin-left: 35px;  
+}
+.menu1 ul li{
+    list-style-type: none;
+    margin-left: 20px; 
+    border-left: 1px solid #d1c7c7da; 
+    padding:10px 14px;
+}
+#USD{
+    border-right: 1px solid #d1c7c7da;  
+}
+.menu1 ul li a{
+    text-decoration: none;
+    color: #d1c7c7da;
+}
+.blog1{
+    width:100%;
+    height: 80px;
+    /* background-color: rgb(43, 181, 8); */
+    padding: 0px 150px;
+    display: flex;
+}
+.blog1 .logo{
+    width: 8%; 
+    height: 100%; 
+    align-items: center;
+    display: flex; 
+}
+.option{
+    width: 30%;
+    height: 100%;
+    margin-left: 80px; 
+    display: flex;
+    align-items: center;
+}
+.option ul{
+    display: flex;  
+}
+.option ul li{
+    list-style-type: none; 
+    padding-right: 28px;
+}
+.option ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    position: relative;  
+}
+.option ul li a:hover{
+    color: blue;
+}
+.option ul span{
+    position: absolute;
+    top: -80%;
+    width: 35px;
+    padding: 1px 1px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+    border: none;
+    font-size: 12px;
+    left:68%;
+    color: aliceblue;
+}
+ .blog1 .icon{
+    width: 20%;
+    height: 100%;
+    justify-content: right;
+    display: flex;
+    margin-left: 285px;
+}
+.icon ul{
+    display: flex;
+}
+.icon ul li{
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    padding-left: 27px;
+}
+.icon ul li a{
+    text-decoration: none;
+    font-size: 20px; 
+    position: relative;   
+}
+.icon ul li a span{
+    width: 10px;
+    padding: 0.51px 2px;
+    background-color: rgba(53, 14, 228, 0.616);
+    font-size: 10px;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    top: -30%;
+    color: aliceblue;
+    right: -40%;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-text{
+    width:400px;
+    height:300px;
+    /* background-color: brown; */
+    position:absolute;
+    top:40%;
+    left:20%;
+}
+.banner-text h2{
+    font-size: 30px;
+}
+.banner-text h1{
+    font-size: 50px;
+    margin: 20px 0px;
+}
+.banner-text #snow{
+    width: 160px;
+    padding:12px 15px;
+    background-color: rgba(0, 0, 255, 0.484);
+    font-size: 18px;
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+#snow:hover{
+    background-color: black;
+
+}
+.item{
+    width: 80%;
+    height: 320px;
+    margin: 100px auto; 
+    display: flex; 
+    justify-content: space-between; 
+   
+}
+.item .item1{
+    width: 32%;
+    height: 100%;
+    border:1px solid rgba(200, 196, 196, 0.701);  
+    position: relative; 
+    transition: 0.3s; 
+
+}
+.item .item1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+    position: absolute; 
+    z-index: -1;
+   
+}
+.item .text{
+    position: absolute;
+    top:15%;
+    left:7%;  
+}
+.item .text p{
+    color: gray;
+    margin-top: 10px;
+}
+.item .item1:hover{
+    background-color: rgba(74, 74, 190, 0.694);
+    transition: 0.6s;
+}
+.item1:hover .text{
+    color:aliceblue;
+}
+.item1:hover .text p{
+    color: aliceblue;
+}
+.item1 .snow {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 64%;
+    left:7%;  
+}
+.item1 .snow a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 17px;
+    visibility: hidden;
+}
+.item .snow a::before{
+    position: absolute;
+    content:"";
+    width: 90%;
+    height: 3px;
+    background-color:red ;
+    bottom: -35%;
+    transition: 0.2s;
+}
+.item1:hover .snow a{
+    visibility: visible;
+    transition: 0.8s;
+    animation:alternate-reverse;
+    transform: rotate(160deg);
+}
+.title{
+    width: 80%;
+    height: 130px;
+    margin: 0 auto;
+    
+}
+.title .view{
+    width: 100%;
+    height: 50%;
+}
+.title .product{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.title .product .op{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.title .product .op ul{
+    display: flex;
+}
+.title .product .op ul li{
+    padding-right: 20px;
+    list-style-type: none;
+}
+.op a{
+    text-decoration: none;
+    padding-right: 23px;
+    font-size: 18px;
+    color: gray;
+    position: relative;
+}
+.op ul li a::before{
+    content: "";
+    width:84%;
+    height:2px;
+    background-color:gray;
+    position: absolute; 
+    bottom:-5%;
+    visibility: hidden;  
+}
+#All-pd::before{
+    content: "";
+    width:80%;
+    height:2px;
+    background-color:black;
+    position: absolute; 
+    bottom:-5%;
+    visibility: visible;
+}
+.op ul li a:hover::before{
+   width: 78%;
+   transition:all 0.3s;
+   visibility: visible;
+}
+.title .for-search{
+    width: 50%;
+    height: 100%;
+    display: flex; 
+    justify-content: right;   
+}
+.for-search .filter,.search{
+    width: 90px;
+    height: 60%;
+    display: flex;
+    border: 1px solid gray;
+    justify-content: center;
+    margin-left: 10px;
+}
+.filter a,.search a{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.filter p,.search p{
+    color: gray;
+    font-size: 20px;
+}
+.filter:hover{
+    background-color: rgb(82, 82, 224);
+}
+.search:hover{
+    background-color: rgb(82, 82, 224);
+}
+.filter a:hover{
+    color: aliceblue;
+}
+.search a:hover{
+    color: aliceblue;
+}
+.filter:hover p{
+    color: aliceblue;
+}
+.search:hover p{
+    color: aliceblue;
+}
+.all-item{
+    width: 80%;
+    height:1900px;
+    margin: 30px auto;
+}
+.all-item .row{
+    width: 100%;
+    height: 25%;
+    display: flex; 
+    justify-content: space-between;
+}
+.row .productt{
+    width: 22%;
+    height: 100%;
+    position: relative;   
+}
+.productt .img{
+    width: 100%;
+    height: 78%;  
+    position: relative;  
+    overflow: hidden;
+}
+.productt .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.productt .img:hover img{
+    transform:scale(1.07,1.07);
+    transition: 0.5s;
+}
+.productt .text-pro{
+    width: 100%;
+    height: 24%;
+    display: flex;
+    position: absolute;
+    top: 76%; 
+    justify-content:space-between;
+    display: flex;   
+}
+.text-pro p{
+    margin-top: 25px;
+    color: gray;
+    font-size: 17px;
+}
+.text-pro i{
+    font-size: 20px;
+    color: gray;
+    /* margin-left: 153px; */
+    margin-top: 25px;
+}
+.text-pro i:hover{
+   color: blue;
+}
+#price{
+    position: absolute;
+    top: 87.6%;
+    left: 0%;
+}
+.quick-view{
+    width: 100%;
+    height:15%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:100%;
+    left:0%;
+    transition: 0.4s;
+}
+.img:hover .quick-view{
+    top:83%;
+    transition: 0.7s;
+}
+.quick-view:hover #btn-card{
+    color: aliceblue;
+    background-color: black;
+    transition: 0.4s;
+}
+.quick-view #btn-card{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(245, 248, 243);
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.load{
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.load #more{
+    width: 180px;
+    padding: 13px 35px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.393); 
+    transition: 0.4s;  
+}
+.load #more a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;      
+}
+#more:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 0.3s;
+}
+#more:hover p{
+    color: aliceblue;  
+}
+.footer{
+    width: 100%;
+    height: 460px;
+    background-color: rgb(5, 6, 5);
+    margin: 91px 0px 1px 0px; 
+}
+.footer .top{
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+.top .CATEGORIES,.HELP ,.GET-IN,.NEWSLETTER{
+    width:25%;
+    height: 100%;
+}
+.CATEGORIES h3,.GET-IN h3,.NEWSLETTER h3{
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 30px;
+}
+.CATEGORIES ul{
+    list-style-type: none;
+}
+.CATEGORIES ul li{
+    
+    line-height: 30px;
+}
+.CATEGORIES ul li a{
+    font-size: 16px;
+    color: rgba(216, 212, 212, 0.808);
+    text-decoration: none;
+    transition: 0.1s;
+}
+.CATEGORIES li a:hover {
+    color: rgb(85, 85, 243);
+    transition: 0.1s;
+}
+.footer .bottom{
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+.GET-IN .text-p{
+    color: aliceblue;
+    padding-right: 70px;
+    box-sizing: border-box;
+    line-height: 27px;
+    color: rgba(216, 212, 212, 0.808);
+}
+.GET-IN .social-media i{
+    color: rgb(177, 180, 185);
+    font-size: 23px;
+    margin: 14px 15px 0px 0px;
+    cursor: pointer;
+}
+.GET-IN .social-media i:hover{
+    color: rgb(121, 121, 248);
+}
+.NEWSLETTER #email{
+    width:100%;
+    padding:10px 0px;
+    font-size: 14px;
+    border: none;
+    border-bottom:3px solid gray;
+    color: aliceblue; 
+    transition: 0.5s;
+    outline: none;
+    background-color: black;
+}
+.NEWSLETTER form:hover #email{ 
+    border:none;
+    border-bottom:3px solid gray;
+    transition: 0.9s;
+    outline: none;
+}
+.NEWSLETTER form #email:focus {
+    border-bottom:3px solid  rgb(73, 73, 224);
+    transition: 0.9s;
+}
+.NEWSLETTER #subcribe{
+    width: 170px;
+    padding:14px 15px;
+    font-size: 15px;
+    background-color: rgb(100, 100, 249);
+    border: none;
+    border-radius: 23px;
+    margin-top: 15px;
+}
+.NEWSLETTER #subcribe{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.4s;
+}
+#subcribe:hover{
+    background-color: aliceblue;
+    color: rgb(73, 73, 224);
+    transition: 0.4s;
+}
+.bottom .visa{
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    display: flex;
+    align-items: center;  
+}
+.bottom .visa img{
+    margin-right: 4px;
+    cursor: pointer;
+}
+.cp-right{
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+    display: flex;
+    color: gray;
+}
+#two-text{
+    color: blue;
+    cursor: pointer;
+    margin: 0px 5px;
+}
+#two-text:hover{
+    opacity: 0.8;
+}
+.go-up{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(101, 101, 243);
+    position: absolute;
+    bottom: -332.5%;
+    right:3%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+}
+.go-up i{
+    color: aliceblue;   
+}
+.go-up:hover{
+    opacity: 0.9;
+}
+.go-up a:active{
+    transition: 0.9s;
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
